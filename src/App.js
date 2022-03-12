@@ -32,21 +32,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <h1>The app has been updated!</h1> */}
-        <Route exact path='/' render={() => (
-          <ListContacts
-            onDeleteContact={this.removeContact}
-            contacts={this.state.contacts}
-          />
-        )}/>
-        <Route path='/create' render={({ history }) => (
-          <CreateContact
-            onCreateContact={(contact) => {
-              this.createContact(contact)
-              history.push('/')
-            }}
-          />
-        )}/>
+        You updated your application again!
       </div>
     )
   }
